@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented in this file.
 
+## 0.1.1
+
+* README documentation, contributing, security, and license entries now open the files on GitHub.
+
 ## 0.1.0
 
 * Initial public release, published as `flutter_guard_sdk` because `flutter_guard` is too similar to the existing `flutter_guards` package on pub.dev.

@@ -4,7 +4,7 @@
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.44.0-02569B)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.12-0175C2)](https://dart.dev)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Kishandobariya76/flutter_guard/blob/main/LICENSE)
 
 FlutterGuard is an architecture-agnostic SDK for networking, authentication
 refresh, caching, offline work, diagnostics, feature flags, and a debug
@@ -81,7 +81,7 @@ it too similar to the existing `flutter_guards` package.
 
 ```yaml
 dependencies:
-  flutter_guard_sdk: ^0.1.0
+  flutter_guard_sdk: ^0.1.1
 ```
 
 ```bash
@@ -198,7 +198,7 @@ example **Configuration Playground**.
 | NetworkConfig.followRedirects | bool | true | Follow HTTP redirects |
 | NetworkConfig.maxRedirects | int | 5 | Redirect cap |
 | NetworkConfig.enableDefaultDeduplication | bool | false | Global in-flight sharing |
-| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.0 | Default User-Agent |
+| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.1 | Default User-Agent |
 | RetryConfig.maxAttempts | int | 3 | Attempts including the first |
 | RetryConfig.initialDelay | Duration | 500ms | Base retry delay |
 | RetryConfig.maxDelay | Duration | 10s | Backoff cap |
@@ -801,7 +801,7 @@ inspector disabled in production presets.
 
 ## Migration Guide
 
-See [MIGRATION.md](MIGRATION.md). This is the initial release.
+See [MIGRATION.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/MIGRATION.md). This is the initial release.
 
 ## API Reference
 
@@ -826,17 +826,27 @@ They are not implemented in this repository.
 * Optional `connectivity_plus` adapter package
 * Remote feature-flag provider package
 
+## Documentation
+
+* [README.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/README.md)
+* [CHANGELOG.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/CHANGELOG.md)
+* [CONTRIBUTING.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/CONTRIBUTING.md)
+* [SECURITY.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/SECURITY.md)
+* [MIGRATION.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/MIGRATION.md)
+* [LICENSE](https://github.com/Kishandobariya76/flutter_guard/blob/main/LICENSE)
+* [example/README.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/example/README.md)
+
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/CONTRIBUTING.md).
 
 ## Security Policy
 
-See [SECURITY.md](SECURITY.md).
+See [SECURITY.md](https://github.com/Kishandobariya76/flutter_guard/blob/main/SECURITY.md).
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/Kishandobariya76/flutter_guard/blob/main/LICENSE).
 
 ## Example Application Index
 

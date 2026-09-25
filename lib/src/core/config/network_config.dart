@@ -12,7 +12,7 @@ class NetworkConfig {
     this.followRedirects = true,
     this.maxRedirects = 5,
     this.enableDefaultDeduplication = false,
-    this.userAgent = 'flutter_guard_sdk/0.1.0',
+    this.userAgent = 'flutter_guard_sdk/0.1.1',
   });
 
   /// Time allowed to establish a connection.
@@ -116,7 +116,7 @@ class NetworkConfig {
   ///
   /// **Type:** `String`
   /// **Required:** no
-  /// **Default:** `flutter_guard_sdk/0.1.0`
+  /// **Default:** `flutter_guard_sdk/0.1.1`
   /// **Purpose:** Identifies the client to your API and logs.
   /// **Allowed values:** Any HTTP token-safe string.
   /// **Example:** `NetworkConfig(userAgent: 'my_app/1.4.0')`
