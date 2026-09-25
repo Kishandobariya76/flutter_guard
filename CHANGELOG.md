@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented in this file.
 
+## 0.1.3
+
+* Support links hide the UPI ID. Phones open a UPI app; desktops show a QR.
+
 ## 0.1.2
 
 * README now includes developer details and UPI support (QR on desktop, `upi://` on phone).

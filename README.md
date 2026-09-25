@@ -5,7 +5,7 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.44.0-02569B)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.12-0175C2)](https://dart.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Kishandobariya76/flutter_guard/blob/main/LICENSE)
-[![Buy Me a Chai](https://img.shields.io/badge/Buy%20Me%20a%20Chai-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](upi://pay?pa=kishup713-3@okicici&pn=Kishan%20Dobariya&cu=INR&tn=Buy%20me%20a%20chai)
+[![Buy Me a Chai](https://img.shields.io/badge/Buy%20Me%20a%20Chai-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://cdn.jsdelivr.net/gh/Kishandobariya76/flutter_guard@main/support.html)
 
 FlutterGuard is an architecture-agnostic SDK for networking, authentication
 refresh, caching, offline work, diagnostics, feature flags, and a debug
@@ -82,7 +82,7 @@ it too similar to the existing `flutter_guards` package.
 
 ```yaml
 dependencies:
-  flutter_guard_sdk: ^0.1.2
+  flutter_guard_sdk: ^0.1.3
 ```
 
 ```bash
@@ -199,7 +199,7 @@ example **Configuration Playground**.
 | NetworkConfig.followRedirects | bool | true | Follow HTTP redirects |
 | NetworkConfig.maxRedirects | int | 5 | Redirect cap |
 | NetworkConfig.enableDefaultDeduplication | bool | false | Global in-flight sharing |
-| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.2 | Default User-Agent |
+| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.3 | Default User-Agent |
 | RetryConfig.maxAttempts | int | 3 | Attempts including the first |
 | RetryConfig.initialDelay | Duration | 500ms | Base retry delay |
 | RetryConfig.maxDelay | Duration | 10s | Backoff cap |
@@ -853,26 +853,17 @@ MIT. See [LICENSE](https://github.com/Kishandobariya76/flutter_guard/blob/main/L
 
 If FlutterGuard saved you time, you can buy me a chai.
 
-**Desktop:** scan this QR with any UPI app, or copy the UPI ID.
+[![Buy Me a Chai](https://img.shields.io/badge/Buy%20Me%20a%20Chai-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://cdn.jsdelivr.net/gh/Kishandobariya76/flutter_guard@main/support.html)
 
-<p align="center">
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi%3A%2F%2Fpay%3Fpa%3Dkishup713-3%40okicici%26pn%3DKishan%20Dobariya%26cu%3DINR%26tn%3DBuy%20me%20a%20chai" alt="Pay Kishan Dobariya with UPI" width="220" height="220">
-</p>
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://cdn.jsdelivr.net/gh/Kishandobariya76/flutter_guard@main/support.html)
 
-**UPI ID:** `kishup713-3@okicici`
-
-**Phone:** tap [Pay with UPI](upi://pay?pa=kishup713-3@okicici&pn=Kishan%20Dobariya&cu=INR&tn=Buy%20me%20a%20chai) to open GPay, PhonePe, Paytm, or any other UPI app.
-
-[![Buy Me a Chai](https://img.shields.io/badge/Buy%20Me%20a%20Chai-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](upi://pay?pa=kishup713-3@okicici&pn=Kishan%20Dobariya&cu=INR&tn=Buy%20me%20a%20chai)
-
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](upi://pay?pa=kishup713-3@okicici&pn=Kishan%20Dobariya&cu=INR&tn=Buy%20me%20a%20chai)
+Phones open a UPI app. Desktops show a QR to scan.
 
 ## Developer
 
 **Kishan Dobariya**
 
 * Phone: [+91 90232 56218](tel:+919023256218)
-* UPI: `kishup713-3@okicici`
 * Email: [flutterdeveloper2206@gmail.com](mailto:flutterdeveloper2206@gmail.com)
 * LinkedIn: [kishan-dobariya-99b005217](https://www.linkedin.com/in/kishan-dobariya-99b005217)
 * GitHub: [Kishandobariya76](https://github.com/Kishandobariya76)
