@@ -1,4 +1,4 @@
-import 'package:flutter_guard/flutter_guard.dart';
+import 'package:flutter_guard_sdk/flutter_guard_sdk.dart';
 import 'package:flutter_guard_example/app/app.dart';
 import 'package:flutter_guard_example/core/demo_bootstrap.dart';
 import 'package:flutter_test/flutter_test.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_guard/flutter_guard.dart';
+import 'package:flutter_guard_sdk/flutter_guard_sdk.dart';
 
 class DemoScaffold extends StatelessWidget {
   const DemoScaffold({

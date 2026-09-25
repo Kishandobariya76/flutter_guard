@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_guard/flutter_guard.dart';
+import 'package:flutter_guard_sdk/flutter_guard_sdk.dart';
 
 /// Test transport that records calls and runs a scripted handler.
 class ScriptedTransport implements GuardTransport {

@@ -1,4 +1,4 @@
-name: flutter_guard
+name: flutter_guard_sdk
 description: >-
   Production infrastructure for Flutter applications — networking, auth
   refresh, caching, offline sync, diagnostics, and a debug inspector.

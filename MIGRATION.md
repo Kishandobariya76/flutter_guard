@@ -7,9 +7,12 @@ API to migrate from.
 
 ### Installation
 
+The pub.dev package name is `flutter_guard_sdk`. The Dart API still uses
+`FlutterGuard`.
+
 ```yaml
 dependencies:
-  flutter_guard: ^0.1.0
+  flutter_guard_sdk: ^0.1.0
 ```
 
 ```bash

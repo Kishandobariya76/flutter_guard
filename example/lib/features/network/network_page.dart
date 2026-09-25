@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_guard/flutter_guard.dart';
+import 'package:flutter_guard_sdk/flutter_guard_sdk.dart';
 
 import '../../core/demo_bootstrap.dart';
 import '../../shared/widgets.dart';

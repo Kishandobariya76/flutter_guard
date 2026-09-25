@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_guard/flutter_guard.dart';
+import 'package:flutter_guard_sdk/flutter_guard_sdk.dart';
 
 import '../features/authentication/auth_page.dart';
 import '../features/cache/cache_page.dart';

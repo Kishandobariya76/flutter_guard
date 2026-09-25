@@ -71,13 +71,17 @@ Application (setState, Riverpod, Bloc, GetX, …)
 ```
 
 Implementation details live under `lib/src/`. Import
-`package:flutter_guard/flutter_guard.dart`.
+`package:flutter_guard_sdk/flutter_guard_sdk.dart`.
 
 ## Installation
 
+The pub.dev name is `flutter_guard_sdk`. The product API is still
+`FlutterGuard`. `flutter_guard` could not be used because pub.dev considers
+it too similar to the existing `flutter_guards` package.
+
 ```yaml
 dependencies:
-  flutter_guard: ^0.1.0
+  flutter_guard_sdk: ^0.1.0
 ```
 
 ```bash
@@ -99,7 +103,7 @@ store.
 
 ```dart
 import 'package:flutter/widgets.dart';
-import 'package:flutter_guard/flutter_guard.dart';
+import 'package:flutter_guard_sdk/flutter_guard_sdk.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -194,7 +198,7 @@ example **Configuration Playground**.
 | NetworkConfig.followRedirects | bool | true | Follow HTTP redirects |
 | NetworkConfig.maxRedirects | int | 5 | Redirect cap |
 | NetworkConfig.enableDefaultDeduplication | bool | false | Global in-flight sharing |
-| NetworkConfig.userAgent | String | flutter_guard/0.1.0 | Default User-Agent |
+| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.0 | Default User-Agent |
 | RetryConfig.maxAttempts | int | 3 | Attempts including the first |
 | RetryConfig.initialDelay | Duration | 500ms | Base retry delay |
 | RetryConfig.maxDelay | Duration | 10s | Backoff cap |
@@ -801,7 +805,7 @@ See [MIGRATION.md](MIGRATION.md). This is the initial release.
 
 ## API Reference
 
-Import `package:flutter_guard/flutter_guard.dart`. Dartdoc is the source of
+Import `package:flutter_guard_sdk/flutter_guard_sdk.dart`. Dartdoc is the source of
 truth for parameters, returns, and exceptions.
 
 ## Architecture Extension

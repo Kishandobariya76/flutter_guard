@@ -19,13 +19,13 @@ cd example && flutter test
 ## Project structure
 
 ```text
-lib/flutter_guard.dart     Public exports
+lib/flutter_guard_sdk.dart     Public exports
 lib/src/                   Implementation
 example/                   Runnable demo of every module
 test/                      Package tests
 ```
 
-Do not export new types from `lib/flutter_guard.dart` unless they are part of
+Do not export new types from `lib/flutter_guard_sdk.dart` unless they are part of
 the supported public API.
 
 ## Branch strategy
