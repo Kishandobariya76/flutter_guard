@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented in this file.
 
+## 0.1.2
+
+* README now includes developer details and UPI support (QR on desktop, `upi://` on phone).
+
 ## 0.1.1
 
 * README documentation, contributing, security, and license entries now open the files on GitHub.
