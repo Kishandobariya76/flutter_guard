@@ -1,0 +1,27 @@
+name: flutter_guard
+description: >-
+  Production infrastructure for Flutter applications — networking, auth
+  refresh, caching, offline sync, diagnostics, and a debug inspector.
+version: 0.1.0
+topics:
+  - network
+  - cache
+  - offline
+  - diagnostics
+  - inspector
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
