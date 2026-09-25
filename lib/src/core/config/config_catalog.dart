@@ -182,7 +182,7 @@ class ConfigCatalog {
       owner: 'NetworkConfig',
       name: 'userAgent',
       type: 'String',
-      defaultValue: 'flutter_guard_sdk/0.1.3',
+      defaultValue: 'flutter_guard_sdk/0.1.4',
       description: 'Default User-Agent header.',
     ),
     ConfigOption(

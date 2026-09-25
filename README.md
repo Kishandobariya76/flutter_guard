@@ -82,7 +82,7 @@ it too similar to the existing `flutter_guards` package.
 
 ```yaml
 dependencies:
-  flutter_guard_sdk: ^0.1.3
+  flutter_guard_sdk: ^0.1.4
 ```
 
 ```bash
@@ -199,7 +199,7 @@ example **Configuration Playground**.
 | NetworkConfig.followRedirects | bool | true | Follow HTTP redirects |
 | NetworkConfig.maxRedirects | int | 5 | Redirect cap |
 | NetworkConfig.enableDefaultDeduplication | bool | false | Global in-flight sharing |
-| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.3 | Default User-Agent |
+| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.4 | Default User-Agent |
 | RetryConfig.maxAttempts | int | 3 | Attempts including the first |
 | RetryConfig.initialDelay | Duration | 500ms | Base retry delay |
 | RetryConfig.maxDelay | Duration | 10s | Backoff cap |

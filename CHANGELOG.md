@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## 0.1.3
+## 0.1.4
 
 * Support links hide the UPI ID. Phones open a UPI app; desktops show a QR.
 
