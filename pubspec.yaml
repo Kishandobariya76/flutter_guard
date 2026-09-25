@@ -3,6 +3,9 @@ description: >-
   Production infrastructure for Flutter applications — networking, auth
   refresh, caching, offline sync, diagnostics, and a debug inspector.
 version: 0.1.0
+homepage: https://github.com/Kishandobariya76/flutter_guard
+repository: https://github.com/Kishandobariya76/flutter_guard
+issue_tracker: https://github.com/Kishandobariya76/flutter_guard/issues
 topics:
   - network
   - cache

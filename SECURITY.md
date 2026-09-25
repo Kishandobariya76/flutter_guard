@@ -9,8 +9,8 @@ The latest `0.1.x` release is the supported version.
 If you believe you have found a security issue in FlutterGuard:
 
 1. Do **not** open a public issue.
-2. Use the repository's private security advisory flow once a public
-   repository URL is published.
+2. Use GitHub's private security advisory flow:
+   https://github.com/Kishandobariya76/flutter_guard/security/advisories/new
 3. Include the package version, a minimal reproduction, and the impact.
 
 Do not attach real access tokens, refresh tokens, passwords, or production
