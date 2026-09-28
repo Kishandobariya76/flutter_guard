@@ -24,8 +24,7 @@ class _CachePageState extends State<CachePage> {
         cacheTags: const <String>['products'],
       );
       setState(() {
-        _output =
-            'Policy ${policy.name}\n'
+        _output = 'Policy ${policy.name}\n'
             'hits ${guard.metrics.cacheHits} misses ${guard.metrics.cacheMisses}\n'
             '${describeResponse(response)}';
       });

@@ -17,9 +17,9 @@ abstract class FeatureFlagProvider {
 class LocalFeatureFlagProvider implements FeatureFlagProvider {
   /// Creates a local provider.
   LocalFeatureFlagProvider([Map<String, FeatureFlag>? seed])
-    : _flags = Map<String, FeatureFlag>.of(
-        seed ?? const <String, FeatureFlag>{},
-      );
+      : _flags = Map<String, FeatureFlag>.of(
+          seed ?? const <String, FeatureFlag>{},
+        );
 
   final Map<String, FeatureFlag> _flags;
 

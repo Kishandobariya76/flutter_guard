@@ -4,7 +4,7 @@ Thank you for helping improve FlutterGuard.
 
 ## Development setup
 
-1. Install [Flutter 3.44.0](https://docs.flutter.dev/release/archive) (Dart 3.12).
+1. Install [Flutter >= 3.0.0](https://docs.flutter.dev/release/archive) (Dart >= 3.0.0).
 2. Clone this repository.
 3. From the package root:
 
@@ -36,7 +36,7 @@ the supported public API.
 
 ## Coding standards
 
-* Dart 3.12 null safety and the package `analysis_options.yaml`.
+* Dart 3 null safety and the package `analysis_options.yaml`.
 * Document every public member with dartdoc.
 * Keep FlutterGuard architecture-agnostic. Do not add GetX, Bloc, Riverpod,
   Provider, or MobX as dependencies.

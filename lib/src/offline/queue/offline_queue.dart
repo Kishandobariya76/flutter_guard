@@ -14,8 +14,8 @@ class OfflineQueue {
   OfflineQueue({
     required OfflineConfig config,
     required GuardKeyValueStore store,
-  }) : _config = config,
-       _store = store;
+  })  : _config = config,
+        _store = store;
 
   final OfflineConfig _config;
   final GuardKeyValueStore _store;
@@ -60,10 +60,10 @@ class OfflineQueue {
           ..clear()
           ..addAll(
             decoded.whereType<Map<dynamic, dynamic>>().map(
-              (item) => OfflineQueuedRequest.fromJson(
-                Map<String, Object?>.from(item),
-              ),
-            ),
+                  (item) => OfflineQueuedRequest.fromJson(
+                    Map<String, Object?>.from(item),
+                  ),
+                ),
           );
       }
     } on Object catch (error) {

@@ -53,8 +53,7 @@ Future<(FlutterGuard, ScriptedTransport)> createGuard({
 }) async {
   final transport = ScriptedTransport();
   final adapter = connectivity ?? ManualConnectivityAdapter();
-  final config =
-      configure?.call(transport) ??
+  final config = configure?.call(transport) ??
       FlutterGuardConfig(
         baseUrl: 'https://api.example.com',
         transport: transport,

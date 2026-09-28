@@ -8,8 +8,8 @@ import 'token/token_store.dart';
 class GuardAuth {
   /// Creates an auth facade.
   GuardAuth({required AuthConfig config, TokenStore? store})
-    : _config = config,
-      _store = store ?? config.tokenStore ?? MemoryTokenStore();
+      : _config = config,
+        _store = store ?? config.tokenStore ?? MemoryTokenStore();
 
   final AuthConfig _config;
   final TokenStore _store;

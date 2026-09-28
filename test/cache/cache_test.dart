@@ -111,9 +111,12 @@ void main() {
       cachePolicy: CachePolicy.networkOnly,
     );
     transport.handler = (request) async {
-      return ScriptedTransport.jsonResponse(request, <String, Object?>{
-        'error': true,
-      }, statusCode: 500);
+      return ScriptedTransport.jsonResponse(
+          request,
+          <String, Object?>{
+            'error': true,
+          },
+          statusCode: 500);
     };
     final response = await guard.network.get<Map<String, Object?>>(
       '/catalog',

@@ -252,14 +252,14 @@ class FlutterGuardConfig {
     }
     return switch (environment) {
       GuardEnvironment.development => const DiagnosticsConfig(
-        logLevel: LogLevel.debug,
-      ),
+          logLevel: LogLevel.debug,
+        ),
       GuardEnvironment.staging => const DiagnosticsConfig(
-        logLevel: LogLevel.info,
-      ),
+          logLevel: LogLevel.info,
+        ),
       GuardEnvironment.production => const DiagnosticsConfig(
-        logLevel: LogLevel.error,
-      ),
+          logLevel: LogLevel.error,
+        ),
     };
   }
 
@@ -272,7 +272,8 @@ class FlutterGuardConfig {
     }
     return switch (environment) {
       GuardEnvironment.development ||
-      GuardEnvironment.staging => const InspectorConfig(enabled: true),
+      GuardEnvironment.staging =>
+        const InspectorConfig(enabled: true),
       GuardEnvironment.production => const InspectorConfig(enabled: false),
     };
   }

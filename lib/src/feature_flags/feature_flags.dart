@@ -11,12 +11,12 @@ class FeatureFlags {
   FeatureFlags({
     required FeatureFlagConfig config,
     required GuardEnvironment environment,
-  }) : _config = config,
-       _environment = environment,
-       _provider = config.provider ?? LocalFeatureFlagProvider(config.flags),
-       _userId = config.userId ?? 'anonymous',
-       _appVersion = config.appVersion,
-       _flags = Map<String, FeatureFlag>.of(config.flags);
+  })  : _config = config,
+        _environment = environment,
+        _provider = config.provider ?? LocalFeatureFlagProvider(config.flags),
+        _userId = config.userId ?? 'anonymous',
+        _appVersion = config.appVersion,
+        _flags = Map<String, FeatureFlag>.of(config.flags);
 
   final FeatureFlagConfig _config;
   final GuardEnvironment _environment;

@@ -9,11 +9,11 @@ import 'redaction.dart';
 class GuardLogger {
   /// Creates a logger.
   GuardLogger(DiagnosticsConfig config)
-    : _config = config,
-      _redactor = LogRedactor(
-        enabled: config.redactSensitiveFields,
-        extraKeys: config.extraRedactedKeys,
-      );
+      : _config = config,
+        _redactor = LogRedactor(
+          enabled: config.redactSensitiveFields,
+          extraKeys: config.extraRedactedKeys,
+        );
 
   final DiagnosticsConfig _config;
   final LogRedactor _redactor;

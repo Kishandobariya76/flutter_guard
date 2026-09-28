@@ -20,8 +20,8 @@ class FlutterGuardScope extends InheritedWidget {
   /// The nearest [FlutterGuard], or [FlutterGuard.instance] when no scope
   /// exists.
   static FlutterGuard of(BuildContext context) {
-    final scope = context
-        .dependOnInheritedWidgetOfExactType<FlutterGuardScope>();
+    final scope =
+        context.dependOnInheritedWidgetOfExactType<FlutterGuardScope>();
     return scope?.guard ?? FlutterGuard.instance;
   }
 

@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented in this file.
 
+## 0.1.5
+
+* Updated Dart and Flutter SDK environment constraints to `sdk: ">=3.0.0 <4.0.0"` and `flutter: ">=3.0.0"` so developers on stable Flutter channels can install and use FlutterGuard.
+
 ## 0.1.4
 
 * Support links hide the UPI ID. Phones open a UPI app; desktops show a QR.

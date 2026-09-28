@@ -15,8 +15,8 @@ class HttpGuardTransport implements GuardTransport {
     http.Client? client,
     this.followRedirects = true,
     this.maxRedirects = 5,
-  }) : _client = client,
-       _ownsClient = client == null;
+  })  : _client = client,
+        _ownsClient = client == null;
 
   final http.Client? _client;
   final bool _ownsClient;
@@ -50,18 +50,16 @@ class HttpGuardTransport implements GuardTransport {
       final timeout = request.timeout;
       final streamed = timeout == null
           ? await client.send(httpRequest)
-          : await client
-                .send(httpRequest)
-                .timeout(
-                  timeout,
-                  onTimeout: () {
-                    throw RequestTimeoutException(
-                      'Request timed out after $timeout',
-                      requestId: request.requestId,
-                      timeout: timeout,
-                    );
-                  },
+          : await client.send(httpRequest).timeout(
+              timeout,
+              onTimeout: () {
+                throw RequestTimeoutException(
+                  'Request timed out after $timeout',
+                  requestId: request.requestId,
+                  timeout: timeout,
                 );
+              },
+            );
       request.cancelToken?.throwIfCancelled(requestId: request.requestId);
       final response = timeout == null
           ? await http.Response.fromStream(streamed)

@@ -29,9 +29,12 @@ void main() {
     transport.handler = (request) async {
       attempts += 1;
       if (attempts < 3) {
-        return ScriptedTransport.jsonResponse(request, <String, Object?>{
-          'error': true,
-        }, statusCode: 500);
+        return ScriptedTransport.jsonResponse(
+            request,
+            <String, Object?>{
+              'error': true,
+            },
+            statusCode: 500);
       }
       return ScriptedTransport.jsonResponse(request, <String, Object?>{
         'ok': true,
@@ -59,9 +62,12 @@ void main() {
       ),
     );
     transport.handler = (request) async {
-      return ScriptedTransport.jsonResponse(request, <String, Object?>{
-        'error': true,
-      }, statusCode: 500);
+      return ScriptedTransport.jsonResponse(
+          request,
+          <String, Object?>{
+            'error': true,
+          },
+          statusCode: 500);
     };
     await expectLater(
       guard.network.post<Object>('/orders', data: <String, Object?>{'id': 1}),

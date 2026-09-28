@@ -10,9 +10,9 @@ import 'cache_entry.dart';
 class GuardCache {
   /// Creates a cache.
   GuardCache({required CacheConfig config, required GuardKeyValueStore store})
-    : _config = config,
-      _store = store,
-      _memory = LinkedHashMap<String, CacheEntry>();
+      : _config = config,
+        _store = store,
+        _memory = LinkedHashMap<String, CacheEntry>();
 
   final CacheConfig _config;
   final GuardKeyValueStore _store;

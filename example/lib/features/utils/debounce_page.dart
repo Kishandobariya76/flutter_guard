@@ -28,8 +28,7 @@ class _DebouncePageState extends State<DebouncePage> {
       child: Column(
         children: [
           StatusBanner(
-            message:
-                'Characters typed: $_typed\n'
+            message: 'Characters typed: $_typed\n'
                 'Potential calls: ${_debouncer.scheduled}\n'
                 'Actual calls: $_calls',
           ),

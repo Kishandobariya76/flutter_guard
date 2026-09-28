@@ -51,8 +51,7 @@ class _SyncPageState extends State<SyncPage> {
           const SizedBox(height: 12),
           if (progress != null)
             StatusBanner(
-              message:
-                  'Queue: ${progress.queue}\n'
+              message: 'Queue: ${progress.queue}\n'
                   'Completed: ${progress.completed}\n'
                   'Processing: ${progress.processing}\n'
                   'Pending: ${progress.pending}\n'

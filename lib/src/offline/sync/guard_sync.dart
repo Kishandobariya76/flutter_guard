@@ -9,11 +9,10 @@ import '../queue/offline_queued_request.dart';
 import 'sync_progress.dart';
 
 /// Sends a queued request and returns status plus optional parsed body.
-typedef OfflineSendHandler =
-    Future<({int statusCode, Object? body})> Function(
-      OfflineQueuedRequest item, {
-      Object? overrideData,
-    });
+typedef OfflineSendHandler = Future<({int statusCode, Object? body})> Function(
+  OfflineQueuedRequest item, {
+  Object? overrideData,
+});
 
 /// Drains the offline queue when connectivity returns.
 class GuardSync {
@@ -23,8 +22,8 @@ class GuardSync {
     required OfflineSendHandler sender,
     this.strategy = ConflictStrategy.serverWins,
     this.resolver,
-  }) : _queue = queue,
-       _sender = sender;
+  })  : _queue = queue,
+        _sender = sender;
 
   final OfflineQueue _queue;
   final OfflineSendHandler _sender;

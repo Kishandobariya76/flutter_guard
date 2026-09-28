@@ -12,9 +12,9 @@ class GuardOffline {
     required OfflineConfig config,
     required OfflineQueue queue,
     required GuardSync sync,
-  }) : _config = config,
-       _queue = queue,
-       _sync = sync;
+  })  : _config = config,
+        _queue = queue,
+        _sync = sync;
 
   final OfflineConfig _config;
   final OfflineQueue _queue;

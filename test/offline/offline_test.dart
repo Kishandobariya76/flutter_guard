@@ -44,10 +44,13 @@ void main() {
       data: <String, Object?>{'title': 'client'},
     );
     transport.handler = (request) async {
-      return ScriptedTransport.jsonResponse(request, <String, Object?>{
-        'title': 'server',
-        'updatedAt': '2026-01-01T00:00:00Z',
-      }, statusCode: 409);
+      return ScriptedTransport.jsonResponse(
+          request,
+          <String, Object?>{
+            'title': 'server',
+            'updatedAt': '2026-01-01T00:00:00Z',
+          },
+          statusCode: 409);
     };
     guard.offline.setConflictStrategy(ConflictStrategy.serverWins);
     final progress = await guard.offline.sync();
@@ -70,9 +73,12 @@ void main() {
           'title': 'merged',
         });
       }
-      return ScriptedTransport.jsonResponse(request, <String, Object?>{
-        'title': 'server',
-      }, statusCode: 409);
+      return ScriptedTransport.jsonResponse(
+          request,
+          <String, Object?>{
+            'title': 'server',
+          },
+          statusCode: 409);
     };
     guard.offline.setConflictStrategy(
       ConflictStrategy.custom,

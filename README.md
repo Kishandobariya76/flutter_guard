@@ -2,8 +2,8 @@
 
 **Production infrastructure for Flutter applications.**
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.44.0-02569B)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.12-0175C2)](https://dart.dev)
+[![Flutter](https://img.shields.io/badge/Flutter->=3.0.0-02569B)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart->=3.0.0-0175C2)](https://dart.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Kishandobariya76/flutter_guard/blob/main/LICENSE)
 [![Buy Me a Chai](https://img.shields.io/badge/Buy%20Me%20a%20Chai-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://cdn.jsdelivr.net/gh/Kishandobariya76/flutter_guard@main/support.html)
 
@@ -82,7 +82,7 @@ it too similar to the existing `flutter_guards` package.
 
 ```yaml
 dependencies:
-  flutter_guard_sdk: ^0.1.4
+  flutter_guard_sdk: ^0.1.5
 ```
 
 ```bash
@@ -93,8 +93,8 @@ flutter pub get
 
 | Tool | Minimum |
 | --- | --- |
-| Flutter | 3.44.0 |
-| Dart | 3.12.0 |
+| Flutter | >= 3.0.0 |
+| Dart | >= 3.0.0 |
 
 Platforms: Android, iOS, web, macOS, Windows, and Linux. The default
 transport is `package:http`. Persistence is in-memory unless you inject a
@@ -199,7 +199,7 @@ example **Configuration Playground**.
 | NetworkConfig.followRedirects | bool | true | Follow HTTP redirects |
 | NetworkConfig.maxRedirects | int | 5 | Redirect cap |
 | NetworkConfig.enableDefaultDeduplication | bool | false | Global in-flight sharing |
-| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.4 | Default User-Agent |
+| NetworkConfig.userAgent | String | flutter_guard_sdk/0.1.5 | Default User-Agent |
 | RetryConfig.maxAttempts | int | 3 | Attempts including the first |
 | RetryConfig.initialDelay | Duration | 500ms | Base retry delay |
 | RetryConfig.maxDelay | Duration | 10s | Backoff cap |

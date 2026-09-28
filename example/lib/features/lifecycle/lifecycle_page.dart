@@ -15,8 +15,7 @@ class LifecyclePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           StatusBanner(
-            message:
-                'Background the app, then return. History is recorded by '
+            message: 'Background the app, then return. History is recorded by '
                 'AppLifecycleMonitor.\nCurrent: ${guard.lifecycle.current}',
           ),
           for (final state in guard.lifecycle.history.reversed)

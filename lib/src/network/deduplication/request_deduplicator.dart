@@ -18,11 +18,10 @@ class RequestDeduplicator {
   String keyFor(GuardRequest request) {
     final query = request.query.entries.toList()
       ..sort((a, b) => a.key.compareTo(b.key));
-    final headers =
-        request.headers.entries
-            .where((entry) => !_ignoredHeader(entry.key))
-            .toList()
-          ..sort((a, b) => a.key.compareTo(b.key));
+    final headers = request.headers.entries
+        .where((entry) => !_ignoredHeader(entry.key))
+        .toList()
+      ..sort((a, b) => a.key.compareTo(b.key));
     return jsonEncode(<String, Object?>{
       'method': request.method,
       'url': request.url.toString(),

@@ -12,7 +12,7 @@ import 'connectivity_status.dart';
 class ConnectivityMonitor {
   /// Creates a monitor.
   ConnectivityMonitor({required ConnectivityAdapter adapter, this.probeUri})
-    : _adapter = adapter;
+      : _adapter = adapter;
 
   final ConnectivityAdapter _adapter;
   StreamSubscription<ConnectivityStatus>? _subscription;

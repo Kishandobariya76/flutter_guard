@@ -37,18 +37,18 @@ class GuardNetwork {
     required GuardLogger logger,
     required GuardMetrics metrics,
     List<GuardInterceptor>? interceptors,
-  }) : _config = config,
-       _transport = transport,
-       _auth = auth,
-       _cache = cache,
-       _offline = offline,
-       _connectivity = connectivity,
-       _logger = logger,
-       _metrics = metrics,
-       _retry = RetryEngine(config.network.retry),
-       _interceptors = List<GuardInterceptor>.of(
-         interceptors ?? const <GuardInterceptor>[],
-       );
+  })  : _config = config,
+        _transport = transport,
+        _auth = auth,
+        _cache = cache,
+        _offline = offline,
+        _connectivity = connectivity,
+        _logger = logger,
+        _metrics = metrics,
+        _retry = RetryEngine(config.network.retry),
+        _interceptors = List<GuardInterceptor>.of(
+          interceptors ?? const <GuardInterceptor>[],
+        );
 
   final FlutterGuardConfig _config;
   final GuardTransport _transport;
@@ -383,8 +383,7 @@ class GuardNetwork {
       },
       data: data,
       multipart: multipart,
-      timeout:
-          timeout ??
+      timeout: timeout ??
           _config.network.connectTimeout +
               _config.network.sendTimeout +
               _config.network.receiveTimeout,
@@ -394,8 +393,7 @@ class GuardNetwork {
       cacheTags: cacheTags ?? const <String>[],
       cacheTtl: cacheTtl,
       retry: retry,
-      queueIfOffline:
-          queueIfOffline ??
+      queueIfOffline: queueIfOffline ??
           (_config.offline.queueMutationsByDefault &&
               _isMutation(method.toUpperCase())),
       priority: priority,
@@ -641,14 +639,12 @@ class GuardNetwork {
         );
         unawaited(
           _execute<T>(
-                request.copyWith(cachePolicy: CachePolicy.networkOnly),
-                parser,
-                null,
-              )
-              .then((fresh) {
-                onRevalidate?.call(fresh);
-              })
-              .catchError((Object _) {}),
+            request.copyWith(cachePolicy: CachePolicy.networkOnly),
+            parser,
+            null,
+          ).then((fresh) {
+            onRevalidate?.call(fresh);
+          }).catchError((Object _) {}),
         );
         return response;
       }
@@ -759,9 +755,8 @@ class GuardNetwork {
         }
         rethrow;
       } on FlutterGuardException catch (error) {
-        final retryAfter = error is RateLimitException
-            ? error.retryAfter
-            : null;
+        final retryAfter =
+            error is RateLimitException ? error.retryAfter : null;
         if (_retry.shouldRetry(
           attempt: attempt,
           idempotent: request.isIdempotent,

@@ -26,9 +26,12 @@ void main() {
     transport.handler = (request) async {
       final header = request.headers['Authorization'];
       if (header == 'Bearer old-token') {
-        return ScriptedTransport.jsonResponse(request, <String, Object?>{
-          'error': 'expired',
-        }, statusCode: 401);
+        return ScriptedTransport.jsonResponse(
+            request,
+            <String, Object?>{
+              'error': 'expired',
+            },
+            statusCode: 401);
       }
       expect(header, 'Bearer new-token');
       return ScriptedTransport.jsonResponse(request, <String, Object?>{
@@ -61,9 +64,12 @@ void main() {
       ),
     );
     transport.handler = (request) async {
-      return ScriptedTransport.jsonResponse(request, <String, Object?>{
-        'error': 'expired',
-      }, statusCode: 401);
+      return ScriptedTransport.jsonResponse(
+          request,
+          <String, Object?>{
+            'error': 'expired',
+          },
+          statusCode: 401);
     };
     await expectLater(
       guard.network.get<Object>('/me'),

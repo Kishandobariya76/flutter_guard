@@ -20,7 +20,7 @@ class _OfflineQueuePageState extends State<OfflineQueuePage> {
     final items = guard.offline.items;
     setState(() {
       _output = [
-        ?message,
+        if (message != null) message,
         'Connectivity: ${demoConnectivity.status.name}',
         for (final item in items)
           '${item.id} ${item.method} ${item.path} ${item.status.name} p${item.priority}',

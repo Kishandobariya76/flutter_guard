@@ -117,9 +117,12 @@ void main() {
   test('maps HTTP errors onto the exception hierarchy', () async {
     Future<void> expectStatus(int status, Type type) async {
       transport.handler = (request) async {
-        return ScriptedTransport.jsonResponse(request, <String, Object?>{
-          'error': status,
-        }, statusCode: status);
+        return ScriptedTransport.jsonResponse(
+            request,
+            <String, Object?>{
+              'error': status,
+            },
+            statusCode: status);
       };
       await expectLater(
         guard.network.get<Object>('/fail/$status'),
@@ -143,9 +146,12 @@ void main() {
 
   test('getResult captures failures without throwing', () async {
     transport.handler = (request) async {
-      return ScriptedTransport.jsonResponse(request, <String, Object?>{
-        'error': 'gone',
-      }, statusCode: 404);
+      return ScriptedTransport.jsonResponse(
+          request,
+          <String, Object?>{
+            'error': 'gone',
+          },
+          statusCode: 404);
     };
     final result = await guard.network.getResult<Object>('/missing');
     expect(result.isFailure, isTrue);

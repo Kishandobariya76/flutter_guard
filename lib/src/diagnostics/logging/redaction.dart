@@ -6,10 +6,11 @@ class LogRedactor {
     this.enabled = true,
     Iterable<String> extraKeys = const <String>[],
   }) : extraKeys = extraKeys
-           .map(
-             (key) => key.toLowerCase().replaceAll('-', '').replaceAll('_', ''),
-           )
-           .toSet();
+            .map(
+              (key) =>
+                  key.toLowerCase().replaceAll('-', '').replaceAll('_', ''),
+            )
+            .toSet();
 
   /// Built-in keys matched case-insensitively.
   static const Set<String> defaultKeys = <String>{
@@ -66,9 +67,8 @@ class LogRedactor {
     }
     return <String, String>{
       for (final entry in headers.entries)
-        entry.key: isSensitive(entry.key)
-            ? _maskHeader(entry.value)
-            : entry.value,
+        entry.key:
+            isSensitive(entry.key) ? _maskHeader(entry.value) : entry.value,
     };
   }
 

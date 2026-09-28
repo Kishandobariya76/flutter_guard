@@ -66,9 +66,12 @@ class DemoTransport implements GuardTransport {
     if (path.endsWith('/auth/refresh') && request.method == 'POST') {
       final token = await session.refresh();
       if (token == null) {
-        return _json(request, <String, Object?>{
-          'error': 'no refresh',
-        }, status: 401);
+        return _json(
+            request,
+            <String, Object?>{
+              'error': 'no refresh',
+            },
+            status: 401);
       }
       return _json(request, <String, Object?>{'accessToken': token});
     }
@@ -80,14 +83,20 @@ class DemoTransport implements GuardTransport {
         // handled below
       }
       if (session.accessToken == null) {
-        return _json(request, <String, Object?>{
-          'error': 'signed out',
-        }, status: 401);
+        return _json(
+            request,
+            <String, Object?>{
+              'error': 'signed out',
+            },
+            status: 401);
       }
       if (session.expired || header != 'Bearer ${session.accessToken}') {
-        return _json(request, <String, Object?>{
-          'error': 'expired',
-        }, status: 401);
+        return _json(
+            request,
+            <String, Object?>{
+              'error': 'expired',
+            },
+            status: 401);
       }
       return _json(request, <String, Object?>{
         'user': 'demo-user',
@@ -116,10 +125,13 @@ class DemoTransport implements GuardTransport {
     if (path.endsWith('/docs/1') && request.method == 'PUT') {
       final data = request.data;
       if (data is Map && data['title'] != 'resolved') {
-        return _json(request, <String, Object?>{
-          'title': 'server',
-          'updatedAt': DateTime.now().toUtc().toIso8601String(),
-        }, status: 409);
+        return _json(
+            request,
+            <String, Object?>{
+              'title': 'server',
+              'updatedAt': DateTime.now().toUtc().toIso8601String(),
+            },
+            status: 409);
       }
       return _json(request, data ?? <String, Object?>{'title': 'resolved'});
     }

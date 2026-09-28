@@ -20,8 +20,7 @@ class _ThrottlePageState extends State<ThrottlePage> {
       child: Column(
         children: [
           StatusBanner(
-            message:
-                'Input events: ${_throttler.scheduled}\n'
+            message: 'Input events: ${_throttler.scheduled}\n'
                 'Executed events: ${_throttler.executed}',
           ),
           FilledButton(

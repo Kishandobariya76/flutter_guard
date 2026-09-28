@@ -23,8 +23,7 @@ class _ConnectivityPageState extends State<ConnectivityPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           StatusBanner(
-            message:
-                'Adapter status: ${demoConnectivity.status.name}\n'
+            message: 'Adapter status: ${demoConnectivity.status.name}\n'
                 'Monitor status: ${guard.connectivity.status.name}\n'
                 'Reachability: $_reachability\n\n'
                 'Connectivity is the adapter path. Reachability is an actual '
@@ -47,9 +46,8 @@ class _ConnectivityPageState extends State<ConnectivityPage> {
                     uri: Uri.parse('https://invalid.invalid'),
                   );
                   setState(() {
-                    _reachability = ok
-                        ? 'reachable'
-                        : 'unreachable (probe failed)';
+                    _reachability =
+                        ok ? 'reachable' : 'unreachable (probe failed)';
                   });
                 },
                 child: const Text('Probe reachability'),

@@ -143,8 +143,7 @@ class FlutterGuard {
   Future<void> _start() async {
     _store = config.store ?? MemoryKeyValueStore();
     _ownsStore = config.store == null;
-    _transport =
-        config.transport ??
+    _transport = config.transport ??
         HttpGuardTransport(
           followRedirects: config.network.followRedirects,
           maxRedirects: config.network.maxRedirects,
