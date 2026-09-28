@@ -355,6 +355,9 @@
       <button class="btn-action btn-secondary" onclick="copyMarkdown()">
         📝 Copy as Markdown
       </button>
+      <button class="btn-action btn-secondary" onclick="copyImageUrl()">
+        🖼️ Copy Image URL
+      </button>
     </div>
   </div>
 
@@ -374,7 +377,7 @@
     </div>
 
     <figure class="feature-image">
-      <img src="flutter_guard_banner.png" alt="FlutterGuard Production Infrastructure for Flutter">
+      <img src="https://raw.githubusercontent.com/Kishandobariya76/flutter_guard/main/flutter_guard_banner.png" alt="FlutterGuard Production Infrastructure for Flutter">
       <figcaption>FlutterGuard: Architecture-agnostic production client infrastructure for Flutter</figcaption>
     </figure>
 
@@ -628,6 +631,8 @@ print('Logged in user: ${response.data.name}');</code></pre>
 **Package:** [flutter_guard_sdk on pub.dev](https://pub.dev/packages/flutter_guard_sdk)
 **GitHub:** [github.com/Kishandobariya76/flutter_guard](https://github.com/Kishandobariya76/flutter_guard)
 
+![FlutterGuard Architecture](https://raw.githubusercontent.com/Kishandobariya76/flutter_guard/main/flutter_guard_banner.png)
+
 ---
 
 Think about the last three commercial Flutter applications you worked on. When setting up the project foundation, what were the first custom utilities you had to build?
@@ -723,6 +728,15 @@ Future<void> main() async {
 
     navigator.clipboard.writeText(markdown).then(() => {
       showToast('✅ Markdown copied with all [Text](URL) links! Paste into Medium/Notion.');
+    }).catch(err => {
+      console.error(err);
+    });
+  }
+
+  function copyImageUrl() {
+    const url = 'https://raw.githubusercontent.com/Kishandobariya76/flutter_guard/main/flutter_guard_banner.png';
+    navigator.clipboard.writeText(url).then(() => {
+      showToast('✅ Public image URL copied to clipboard!');
     }).catch(err => {
       console.error(err);
     });
